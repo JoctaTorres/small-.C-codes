@@ -2,13 +2,10 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-int li, co; // linha e coluna
-int il, ic; // ind.Linha e ind.Coluna
-
-float permuta();
-
 int main()
 {
+    int li, co; // linha e coluna
+    int il, ic; // ind.Linha e ind.Coluna
 S:
     printf("\n DIGITE A DIMENSAO DA MATRIZ. \n LINHAS :: ");
     scanf(" %d", &li);
@@ -57,7 +54,7 @@ S:
         if (matriz[il][ic]==0) // caso permuta
         {
 
-            for(lo=il; lo<li; lo++) //acha na coluna um número não nulo
+            for(lo=il; lo<li; lo++) //acha na coluna um nÃºmero nÃ£o nulo
             {
                 if(matriz[lo][ic]!=0)
                     ld=lo;
